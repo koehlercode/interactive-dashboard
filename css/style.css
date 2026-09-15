@@ -1,4 +1,22 @@
-body {
-        background-color: #29903B;
-        font-family: Arial, sans-serif;
-    }
+/* Stack form labels and inputs vertically */
+#weekly-tasks form div {
+  margin-bottom: 10px;
+}
+
+#weekly-tasks label {
+  display: block;
+}
+
+#weekly-tasks input {
+  width: 100%;
+}
+
+/* Add spacing for the button and message */
+#goal-btn {
+  margin-top: 10px;
+}
+
+#goal-message {
+  margin-top: 15px;
+  font-weight: bold;
+}
