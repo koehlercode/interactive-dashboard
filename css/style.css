@@ -20,3 +20,34 @@
   margin-top: 15px;
   font-weight: bold;
 }
+
+/* Imperial/Metric Converter */
+#metric-converter {
+    padding: 20px;
+}
+
+#metric-converter h2 {
+    margin-bottom: 15px;
+}
+
+#conversion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#conversion-form input,
+#conversion-form select,
+#conversion-form button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#conversion-form button {
+    cursor: pointer;
+}
+
+#conversion-result {
+    margin-top: 15px;
+    font-weight: bold;
+}

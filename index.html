@@ -56,6 +56,37 @@
                 <!-- Output Area -->
                 <p id="goal-message"></p>
             </div>
+
+            <div class="col" id="metric-converter">
+
+                <h2>Imperial/Metric Converter</h2>
+
+                <form id="conversion-form">
+
+                    <label for="numeric-value">Enter a value:</label>
+                    <input type="number" id="numeric-value" step="any">
+
+                    <label for="conversion-type">Choose a conversion:</label>
+                    <select id="conversion-type">
+                        <option value="inch to centimeter">Inch to Centimeter</option>
+                        <option value="foot to centimeter">Foot to Centimeter</option>
+                        <option value="yard to meter">Yard to Meter</option>
+                        <option value="mile to kilometer">Mile to Kilometer</option>
+                        <option value="centimeter to inch">Centimeter to Inch</option>
+                        <option value="centimeter to foot">Centimeter to Foot</option>
+                        <option value="meter to yard">Meter to Yard</option>
+                        <option value="kilometer to mile">Kilometer to Mile</option>
+                    </select>
+
+                    <button type="submit" id="convert-button">Convert</button>
+
+                </form>
+
+                <div id="conversion-result"></div>
+
+                <script src="js/metric-converter.js" defer></script>
+
+            </div>
         </div>
     </div>
 </body>
