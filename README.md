@@ -65,3 +65,16 @@ BEGIN
 
 END
 ```
+
+## Magic Eight Ball
+
+The Magic Eight Ball feature allows users to type a yes/no question and receive a randomized response by clicking on the Eight Ball image.
+
+### Technical Features
+
+* **Array Data Storage:** Stores possible responses in an `answers` array variable.
+* **Random Index Generation:** Uses `Math.random()` and `Math.floor()` to select a random answer from the array.
+* **DOM & CSS Display Manipulation:** Updates the `innerHTML` of the `#circle` element to display the answer and toggles its CSS `display` property to show or hide the circle.
+* **Image Event Listener:** Uses `addEventListener()` on the `mousedown` event for the `#ball` image to trigger input validation and answer display.
+* **Input Validation & Alerts:** Evaluates the `value` property of the question field using an `if/else` statement and triggers an `alert()` if no question is entered.
+* **Reset Functionality:** Uses `addEventListener()` on the `click` event for the reset button to set the circle's display style back to `"none"`.
