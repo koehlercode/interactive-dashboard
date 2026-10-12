@@ -1,3 +1,5 @@
+
+let myTasks = [];
 // Function to calculate weekly task goals and update the UI
 function weeklyGoal(userName, dailyGoal, bonusTasks) {
     // Calculate weekly goal based on 5 workdays per week
@@ -28,5 +30,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Call weeklyGoal function with form input values
         weeklyGoal(userName, dailyGoal, bonusTasks);
+    });
+    
+
+    let taskList = document.getElementById("task-list");
+
+    let userTasks = document.createElement("ul");
+    userTasks.id = "user-tasks";
+    taskList.appendChild(userTasks);
+
+    let addTaskButton = document.getElementById("add-task");
+    let taskNameInput = document.getElementById("task-name");
+
+    addTaskButton.addEventListener("click", function() {
+        let taskName = taskNameInput.value;
+        myTasks.push(taskName);
+
+        let listItem = document.createElement("li");
+        listItem.textContent = taskName;
+        userTasks.appendChild(listItem);
+
     });
 });
