@@ -7,8 +7,8 @@ This project is a web-based dashboard built for **WEB-115** to demonstrate inter
 
 ## TODO: Future Enhancements
 - [x] Add a metric conversion tool.
-- [ ] Integrate a task list with array storage.
-- [ ] Add JavaScript logic for a live clock.
+- [x] Integrate a task list with array storage.
+- [x] Add JavaScript logic for a live clock.
 
 ## Future Enhancements
 - [x] Add a weekly task goal calculator
